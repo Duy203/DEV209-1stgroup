@@ -49,10 +49,18 @@ button:hover {
     background-color: #333;
 }
 
-#secondPart {
-    
-    display: none;
+#firstPart {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
 }
+
+#secondPart {
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    background-color: aquamarine;
+}
+
 #swap{
     display:none;
 }
