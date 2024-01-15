@@ -10,9 +10,11 @@ swap.style.display = "block";
 
 function makeList() {
     let ul = document.createElement('ul');
+    ul.classList.add('list-group');
     document.getElementById("firstList").appendChild(ul);
     for (let i = 0; i < userInputArray.length; i++) {
         let li = document.createElement('li');
+        li.classList.add('list-group-item');
         ul.appendChild(li);
         li.innerHTML =  userInputArray[i];
     };
@@ -36,9 +38,11 @@ document.addEventListener("DOMContentLoaded", function (event)
 
     function makeNewList(newArray){
         let ul = document.createElement('ul');
+        ul.classList.add('list-group','text-center');
         document.getElementById("secondList").appendChild(ul);
         for (let i = 0; i < newArray.length; i++) {
             let li = document.createElement('li');
+            li.classList.add('list-group-item');
             ul.appendChild(li);
             li.innerHTML =  newArray[i];
     };
